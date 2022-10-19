@@ -20,9 +20,6 @@ task_ids:
 - natural-language-inference
 - semantic-similarity-scoring
 - sentiment-classification
-- text-classification-other-coreference-nli
-- text-classification-other-paraphrase-identification
-- text-classification-other-qa-nli
 - text-scoring
 paperswithcode_id: glue
 pretty_name: GLUE (General Language Understanding Evaluation benchmark)
@@ -148,6 +145,10 @@ configs:
 - sst2
 - stsb
 - wnli
+tags:
+- qa-nli
+- coreference-nli
+- paraphrase-identification
 ---
 
 # Dataset Card for GLUE
