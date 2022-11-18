@@ -239,15 +239,15 @@ dataset_info:
   - name: idx
     dtype: int32
   splits:
-  - name: test
-    num_bytes: 55171431
-    num_examples: 390965
   - name: train
     num_bytes: 50901116
     num_examples: 363846
   - name: validation
     num_bytes: 5653794
     num_examples: 40430
+  - name: test
+    num_bytes: 55171431
+    num_examples: 390965
   download_size: 41696084
   dataset_size: 111726341
 - config_name: stsb
