@@ -1,0 +1,14 @@
+mnli/glue-validation_matched.parquet filter=lfs diff=lfs merge=lfs -text
+mnli/glue-train.parquet filter=lfs diff=lfs merge=lfs -text
+mnli/glue-validation_mismatched.parquet filter=lfs diff=lfs merge=lfs -text
+mnli/glue-test_matched.parquet filter=lfs diff=lfs merge=lfs -text
+mnli/glue-test_mismatched.parquet filter=lfs diff=lfs merge=lfs -text
+mnli_matched/glue-validation.parquet filter=lfs diff=lfs merge=lfs -text
+mnli_matched/glue-test.parquet filter=lfs diff=lfs merge=lfs -text
+mnli_mismatched/glue-validation.parquet filter=lfs diff=lfs merge=lfs -text
+mnli_mismatched/glue-test.parquet filter=lfs diff=lfs merge=lfs -text
+qnli/glue-train.parquet filter=lfs diff=lfs merge=lfs -text
+qqp/glue-train.parquet filter=lfs diff=lfs merge=lfs -text
+qqp/glue-validation.parquet filter=lfs diff=lfs merge=lfs -text
+qqp/glue-test.parquet filter=lfs diff=lfs merge=lfs -text
+sst2/glue-train.parquet filter=lfs diff=lfs merge=lfs -text
