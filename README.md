@@ -540,9 +540,9 @@ train-eval-index:
 - **Repository:** [More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
 - **Paper:** [More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
 - **Point of Contact:** [More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
-- **Size of downloaded dataset files:** 955.33 MB
-- **Size of the generated dataset:** 229.68 MB
-- **Total amount of disk used:** 1185.01 MB
+- **Size of downloaded dataset files:** 1.00 GB
+- **Size of the generated dataset:** 240.84 MB
+- **Total amount of disk used:** 1.24 GB
 
 ### Dataset Summary
 
@@ -610,9 +610,9 @@ The language data in GLUE is in English (BCP-47 `en`)
 
 #### ax
 
-- **Size of downloaded dataset files:** 0.21 MB
-- **Size of the generated dataset:** 0.23 MB
-- **Total amount of disk used:** 0.44 MB
+- **Size of downloaded dataset files:** 0.22 MB
+- **Size of the generated dataset:** 0.24 MB
+- **Total amount of disk used:** 0.46 MB
 
 An example of 'test' looks as follows.
 ```
@@ -626,9 +626,9 @@ An example of 'test' looks as follows.
 
 #### cola
 
-- **Size of downloaded dataset files:** 0.36 MB
-- **Size of the generated dataset:** 0.58 MB
-- **Total amount of disk used:** 0.94 MB
+- **Size of downloaded dataset files:** 0.38 MB
+- **Size of the generated dataset:** 0.61 MB
+- **Total amount of disk used:** 0.99 MB
 
 An example of 'train' looks as follows.
 ```
@@ -641,9 +641,9 @@ An example of 'train' looks as follows.
 
 #### mnli
 
-- **Size of downloaded dataset files:** 298.29 MB
-- **Size of the generated dataset:** 78.65 MB
-- **Total amount of disk used:** 376.95 MB
+- **Size of downloaded dataset files:** 312.78 MB
+- **Size of the generated dataset:** 82.47 MB
+- **Total amount of disk used:** 395.26 MB
 
 An example of 'train' looks as follows.
 ```
@@ -657,9 +657,9 @@ An example of 'train' looks as follows.
 
 #### mnli_matched
 
-- **Size of downloaded dataset files:** 298.29 MB
-- **Size of the generated dataset:** 3.52 MB
-- **Total amount of disk used:** 301.82 MB
+- **Size of downloaded dataset files:** 312.78 MB
+- **Size of the generated dataset:** 3.69 MB
+- **Total amount of disk used:** 316.48 MB
 
 An example of 'test' looks as follows.
 ```
@@ -673,9 +673,9 @@ An example of 'test' looks as follows.
 
 #### mnli_mismatched
 
-- **Size of downloaded dataset files:** 298.29 MB
-- **Size of the generated dataset:** 3.73 MB
-- **Total amount of disk used:** 302.02 MB
+- **Size of downloaded dataset files:** 312.78 MB
+- **Size of the generated dataset:** 3.91 MB
+- **Total amount of disk used:** 316.69 MB
 
 An example of 'test' looks as follows.
 ```
