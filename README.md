@@ -5,12 +5,15 @@ language_creators:
 - other
 language:
 - en
+- ab
+- ae
+- av
 license:
 - cc-by-4.0
 multilinguality:
 - monolingual
 size_categories:
-- 10K<n<100K
+- n<1K
 source_datasets:
 - original
 task_categories:
