@@ -23,19 +23,6 @@ task_ids:
 - text-scoring
 paperswithcode_id: glue
 pretty_name: GLUE (General Language Understanding Evaluation benchmark)
-configs:
-- ax
-- cola
-- mnli
-- mnli_matched
-- mnli_mismatched
-- mrpc
-- qnli
-- qqp
-- rte
-- sst2
-- stsb
-- wnli
 tags:
 - qa-nli
 - coreference-nli
@@ -452,6 +439,19 @@ train-eval-index:
     sentence1: text1
     sentence2: text2
     label: target
+config_names:
+- ax
+- cola
+- mnli
+- mnli_matched
+- mnli_mismatched
+- mrpc
+- qnli
+- qqp
+- rte
+- sst2
+- stsb
+- wnli
 ---
 
 # Dataset Card for GLUE
