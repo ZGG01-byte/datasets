@@ -15,3 +15,4 @@ sst2/glue-train.parquet filter=lfs diff=lfs merge=lfs -text
 ax/test/index.duckdb filter=lfs diff=lfs merge=lfs -text
 cola/test/index.duckdb filter=lfs diff=lfs merge=lfs -text
 cola/train/index.duckdb filter=lfs diff=lfs merge=lfs -text
+cola/validation/index.duckdb filter=lfs diff=lfs merge=lfs -text
