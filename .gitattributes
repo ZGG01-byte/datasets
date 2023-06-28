@@ -23,3 +23,4 @@ mnli/validation_matched/index.duckdb filter=lfs diff=lfs merge=lfs -text
 mnli/validation_mismatched/index.duckdb filter=lfs diff=lfs merge=lfs -text
 mnli_matched/test/index.duckdb filter=lfs diff=lfs merge=lfs -text
 mnli_matched/validation/index.duckdb filter=lfs diff=lfs merge=lfs -text
+mnli_mismatched/test/index.duckdb filter=lfs diff=lfs merge=lfs -text
