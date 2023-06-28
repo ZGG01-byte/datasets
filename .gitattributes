@@ -41,3 +41,4 @@ sst2/train/index.duckdb filter=lfs diff=lfs merge=lfs -text
 sst2/validation/index.duckdb filter=lfs diff=lfs merge=lfs -text
 stsb/test/index.duckdb filter=lfs diff=lfs merge=lfs -text
 stsb/validation/index.duckdb filter=lfs diff=lfs merge=lfs -text
+stsb/train/index.duckdb filter=lfs diff=lfs merge=lfs -text
