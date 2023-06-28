@@ -35,3 +35,4 @@ qqp/train/index.duckdb filter=lfs diff=lfs merge=lfs -text
 rte/test/index.duckdb filter=lfs diff=lfs merge=lfs -text
 qqp/validation/index.duckdb filter=lfs diff=lfs merge=lfs -text
 rte/train/index.duckdb filter=lfs diff=lfs merge=lfs -text
+rte/validation/index.duckdb filter=lfs diff=lfs merge=lfs -text
