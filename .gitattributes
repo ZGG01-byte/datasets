@@ -16,3 +16,4 @@ ax/test/index.duckdb filter=lfs diff=lfs merge=lfs -text
 cola/test/index.duckdb filter=lfs diff=lfs merge=lfs -text
 cola/train/index.duckdb filter=lfs diff=lfs merge=lfs -text
 cola/validation/index.duckdb filter=lfs diff=lfs merge=lfs -text
+mnli/test_matched/index.duckdb filter=lfs diff=lfs merge=lfs -text
