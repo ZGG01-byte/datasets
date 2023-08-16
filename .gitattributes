@@ -59,3 +59,4 @@ qnli/train/0000.parquet filter=lfs diff=lfs merge=lfs -text
 qqp/train/0000.parquet filter=lfs diff=lfs merge=lfs -text
 qqp/validation/0000.parquet filter=lfs diff=lfs merge=lfs -text
 qqp/test/0000.parquet filter=lfs diff=lfs merge=lfs -text
+sst2/train/0000.parquet filter=lfs diff=lfs merge=lfs -text
