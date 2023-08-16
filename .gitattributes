@@ -51,3 +51,5 @@ mnli/validation_matched/0000.parquet filter=lfs diff=lfs merge=lfs -text
 mnli/validation_mismatched/0000.parquet filter=lfs diff=lfs merge=lfs -text
 mnli/test_matched/0000.parquet filter=lfs diff=lfs merge=lfs -text
 mnli/test_mismatched/0000.parquet filter=lfs diff=lfs merge=lfs -text
+mnli_matched/validation/0000.parquet filter=lfs diff=lfs merge=lfs -text
+mnli_matched/test/0000.parquet filter=lfs diff=lfs merge=lfs -text
