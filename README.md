@@ -235,16 +235,16 @@ dataset_info:
     dtype: int32
   splits:
   - name: train
-    num_bytes: 50901116
+    num_bytes: 50900820
     num_examples: 363846
   - name: validation
-    num_bytes: 5653794
+    num_bytes: 5653754
     num_examples: 40430
   - name: test
-    num_bytes: 55171431
+    num_bytes: 55171111
     num_examples: 390965
-  download_size: 41696084
-  dataset_size: 111726341
+  download_size: 73982265
+  dataset_size: 111725685
 - config_name: rte
   features:
   - name: sentence1
@@ -360,6 +360,14 @@ configs:
     path: mrpc/validation-*
   - split: test
     path: mrpc/test-*
+- config_name: qqp
+  data_files:
+  - split: train
+    path: qqp/train-*
+  - split: validation
+    path: qqp/validation-*
+  - split: test
+    path: qqp/test-*
 - config_name: sst2
   data_files:
   - split: train

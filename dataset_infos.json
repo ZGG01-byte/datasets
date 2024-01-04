@@ -179,33 +179,26 @@
         "features": {
             "question1": {
                 "dtype": "string",
-                "id": null,
                 "_type": "Value"
             },
             "question2": {
                 "dtype": "string",
-                "id": null,
                 "_type": "Value"
             },
             "label": {
-                "num_classes": 2,
                 "names": [
                     "not_duplicate",
                     "duplicate"
                 ],
-                "names_file": null,
-                "id": null,
                 "_type": "ClassLabel"
             },
             "idx": {
                 "dtype": "int32",
-                "id": null,
                 "_type": "Value"
             }
         },
-        "post_processed": null,
-        "supervised_keys": null,
         "builder_name": "glue",
+        "dataset_name": "glue",
         "config_name": "qqp",
         "version": {
             "version_str": "1.0.0",
@@ -217,33 +210,26 @@
         "splits": {
             "train": {
                 "name": "train",
-                "num_bytes": 50901116,
+                "num_bytes": 50900820,
                 "num_examples": 363846,
-                "dataset_name": "glue"
+                "dataset_name": null
             },
             "validation": {
                 "name": "validation",
-                "num_bytes": 5653794,
+                "num_bytes": 5653754,
                 "num_examples": 40430,
-                "dataset_name": "glue"
+                "dataset_name": null
             },
             "test": {
                 "name": "test",
-                "num_bytes": 55171431,
+                "num_bytes": 55171111,
                 "num_examples": 390965,
-                "dataset_name": "glue"
+                "dataset_name": null
             }
         },
-        "download_checksums": {
-            "https://dl.fbaipublicfiles.com/glue/data/QQP-clean.zip": {
-                "num_bytes": 41696084,
-                "checksum": "40e7c862c04eb26ee04b67fd900e76c45c6ba8e6d8fab4f8f1f8072a1a3fbae0"
-            }
-        },
-        "download_size": 41696084,
-        "post_processing_size": null,
-        "dataset_size": 111726341,
-        "size_in_bytes": 153422425
+        "download_size": 73982265,
+        "dataset_size": 111725685,
+        "size_in_bytes": 185707950
     },
     "stsb": {
         "description": "GLUE, the General Language Understanding Evaluation benchmark\n(https://gluebenchmark.com/) is a collection of resources for training,\nevaluating, and analyzing natural language understanding systems.\n\n",
