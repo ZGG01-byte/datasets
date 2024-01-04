@@ -306,17 +306,17 @@ dataset_info:
   - name: idx
     dtype: int32
   splits:
-  - name: test
-    num_bytes: 170847
-    num_examples: 1379
   - name: train
-    num_bytes: 758394
+    num_bytes: 754791
     num_examples: 5749
   - name: validation
-    num_bytes: 217012
+    num_bytes: 216064
     num_examples: 1500
-  download_size: 802872
-  dataset_size: 1146253
+  - name: test
+    num_bytes: 169974
+    num_examples: 1379
+  download_size: 766983
+  dataset_size: 1140829
 - config_name: wnli
   features:
   - name: sentence1
@@ -376,6 +376,14 @@ configs:
     path: sst2/validation-*
   - split: test
     path: sst2/test-*
+- config_name: stsb
+  data_files:
+  - split: train
+    path: stsb/train-*
+  - split: validation
+    path: stsb/validation-*
+  - split: test
+    path: stsb/test-*
 train-eval-index:
 - config: cola
   task: text-classification
