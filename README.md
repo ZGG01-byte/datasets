@@ -135,14 +135,14 @@ dataset_info:
   - name: idx
     dtype: int32
   splits:
-  - name: test
-    num_bytes: 1854787
-    num_examples: 9796
   - name: validation
-    num_bytes: 1839926
+    num_bytes: 1833783
     num_examples: 9815
-  download_size: 312783507
-  dataset_size: 3694713
+  - name: test
+    num_bytes: 1848654
+    num_examples: 9796
+  download_size: 2435055
+  dataset_size: 3682437
 - config_name: mnli_mismatched
   features:
   - name: premise
@@ -364,6 +364,12 @@ configs:
     path: mnli/test_matched-*
   - split: test_mismatched
     path: mnli/test_mismatched-*
+- config_name: mnli_matched
+  data_files:
+  - split: validation
+    path: mnli_matched/validation-*
+  - split: test
+    path: mnli_matched/test-*
 - config_name: mnli_mismatched
   data_files:
   - split: validation
