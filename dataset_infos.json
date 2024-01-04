@@ -653,40 +653,33 @@
     },
     "ax": {
         "description": "GLUE, the General Language Understanding Evaluation benchmark\n(https://gluebenchmark.com/) is a collection of resources for training,\nevaluating, and analyzing natural language understanding systems.\n\n",
-        "citation": "\n@inproceedings{wang2019glue,\n  title={{GLUE}: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding},\n  author={Wang, Alex and Singh, Amanpreet and Michael, Julian and Hill, Felix and Levy, Omer and Bowman, Samuel R.},\n  note={In the Proceedings of ICLR.},\n  year={2019}\n}\n\nNote that each GLUE dataset has its own citation. Please see the source to see\nthe correct citation for each contained dataset.",
+        "citation": "\n@inproceedings{wang2019glue,\n  title={{GLUE}: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding},\n  author={Wang, Alex and Singh, Amanpreet and Michael, Julian and Hill, Felix and Levy, Omer and Bowman, Samuel R.},\n  note={In the Proceedings of ICLR.},\n  year={2019}\n}\n",
         "homepage": "https://gluebenchmark.com/diagnostics",
         "license": "",
         "features": {
             "premise": {
                 "dtype": "string",
-                "id": null,
                 "_type": "Value"
             },
             "hypothesis": {
                 "dtype": "string",
-                "id": null,
                 "_type": "Value"
             },
             "label": {
-                "num_classes": 3,
                 "names": [
                     "entailment",
                     "neutral",
                     "contradiction"
                 ],
-                "names_file": null,
-                "id": null,
                 "_type": "ClassLabel"
             },
             "idx": {
                 "dtype": "int32",
-                "id": null,
                 "_type": "Value"
             }
         },
-        "post_processed": null,
-        "supervised_keys": null,
         "builder_name": "glue",
+        "dataset_name": "glue",
         "config_name": "ax",
         "version": {
             "version_str": "1.0.0",
@@ -698,20 +691,13 @@
         "splits": {
             "test": {
                 "name": "test",
-                "num_bytes": 238392,
+                "num_bytes": 237694,
                 "num_examples": 1104,
-                "dataset_name": "glue"
+                "dataset_name": null
             }
         },
-        "download_checksums": {
-            "https://dl.fbaipublicfiles.com/glue/data/AX.tsv": {
-                "num_bytes": 222257,
-                "checksum": "0e13510b1bb14436ff7e2ee82338f0efb0133ecf2e73507a697dc210db3f05fd"
-            }
-        },
-        "download_size": 222257,
-        "post_processing_size": null,
-        "dataset_size": 238392,
-        "size_in_bytes": 460649
+        "download_size": 80767,
+        "dataset_size": 237694,
+        "size_in_bytes": 318461
     }
 }

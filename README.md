@@ -58,10 +58,10 @@ dataset_info:
     dtype: int32
   splits:
   - name: test
-    num_bytes: 238392
+    num_bytes: 237694
     num_examples: 1104
-  download_size: 222257
-  dataset_size: 238392
+  download_size: 80767
+  dataset_size: 237694
 - config_name: cola
   features:
   - name: sentence
@@ -344,6 +344,10 @@ dataset_info:
   download_size: 63522
   dataset_size: 157160
 configs:
+- config_name: ax
+  data_files:
+  - split: test
+    path: ax/test-*
 - config_name: cola
   data_files:
   - split: train
