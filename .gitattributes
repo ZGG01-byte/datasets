@@ -75,3 +75,5 @@ cola/validation/0000.parquet filter=lfs diff=lfs merge=lfs -text
 cola/test/0000.parquet filter=lfs diff=lfs merge=lfs -text
 qnli/validation/0000.parquet filter=lfs diff=lfs merge=lfs -text
 qnli/test/0000.parquet filter=lfs diff=lfs merge=lfs -text
+sst2/validation/0000.parquet filter=lfs diff=lfs merge=lfs -text
+sst2/test/0000.parquet filter=lfs diff=lfs merge=lfs -text
