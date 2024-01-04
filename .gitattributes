@@ -64,3 +64,6 @@ ax/test/0000.parquet filter=lfs diff=lfs merge=lfs -text
 rte/train/0000.parquet filter=lfs diff=lfs merge=lfs -text
 rte/validation/0000.parquet filter=lfs diff=lfs merge=lfs -text
 rte/test/0000.parquet filter=lfs diff=lfs merge=lfs -text
+stsb/train/0000.parquet filter=lfs diff=lfs merge=lfs -text
+stsb/validation/0000.parquet filter=lfs diff=lfs merge=lfs -text
+stsb/test/0000.parquet filter=lfs diff=lfs merge=lfs -text
