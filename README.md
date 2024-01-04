@@ -102,23 +102,23 @@ dataset_info:
   - name: idx
     dtype: int32
   splits:
-  - name: test_matched
-    num_bytes: 1854787
-    num_examples: 9796
-  - name: test_mismatched
-    num_bytes: 1956866
-    num_examples: 9847
   - name: train
-    num_bytes: 74865118
+    num_bytes: 74619646
     num_examples: 392702
   - name: validation_matched
-    num_bytes: 1839926
+    num_bytes: 1833783
     num_examples: 9815
   - name: validation_mismatched
-    num_bytes: 1955384
+    num_bytes: 1949231
     num_examples: 9832
-  download_size: 312783507
-  dataset_size: 82472081
+  - name: test_matched
+    num_bytes: 1848654
+    num_examples: 9796
+  - name: test_mismatched
+    num_bytes: 1950703
+    num_examples: 9847
+  download_size: 57168425
+  dataset_size: 82202017
 - config_name: mnli_matched
   features:
   - name: premise
@@ -352,6 +352,18 @@ configs:
     path: cola/validation-*
   - split: test
     path: cola/test-*
+- config_name: mnli
+  data_files:
+  - split: train
+    path: mnli/train-*
+  - split: validation_matched
+    path: mnli/validation_matched-*
+  - split: validation_mismatched
+    path: mnli/validation_mismatched-*
+  - split: test_matched
+    path: mnli/test_matched-*
+  - split: test_mismatched
+    path: mnli/test_mismatched-*
 - config_name: mrpc
   data_files:
   - split: train
