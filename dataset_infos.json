@@ -533,39 +533,32 @@
     },
     "rte": {
         "description": "GLUE, the General Language Understanding Evaluation benchmark\n(https://gluebenchmark.com/) is a collection of resources for training,\nevaluating, and analyzing natural language understanding systems.\n\n",
-        "citation": "@inproceedings{dagan2005pascal,\n  title={The PASCAL recognising textual entailment challenge},\n  author={Dagan, Ido and Glickman, Oren and Magnini, Bernardo},\n  booktitle={Machine Learning Challenges Workshop},\n  pages={177--190},\n  year={2005},\n  organization={Springer}\n}\n@inproceedings{bar2006second,\n  title={The second pascal recognising textual entailment challenge},\n  author={Bar-Haim, Roy and Dagan, Ido and Dolan, Bill and Ferro, Lisa and Giampiccolo, Danilo and Magnini, Bernardo and Szpektor, Idan},\n  booktitle={Proceedings of the second PASCAL challenges workshop on recognising textual entailment},\n  volume={6},\n  number={1},\n  pages={6--4},\n  year={2006},\n  organization={Venice}\n}\n@inproceedings{giampiccolo2007third,\n  title={The third pascal recognizing textual entailment challenge},\n  author={Giampiccolo, Danilo and Magnini, Bernardo and Dagan, Ido and Dolan, Bill},\n  booktitle={Proceedings of the ACL-PASCAL workshop on textual entailment and paraphrasing},\n  pages={1--9},\n  year={2007},\n  organization={Association for Computational Linguistics}\n}\n@inproceedings{bentivogli2009fifth,\n  title={The Fifth PASCAL Recognizing Textual Entailment Challenge.},\n  author={Bentivogli, Luisa and Clark, Peter and Dagan, Ido and Giampiccolo, Danilo},\n  booktitle={TAC},\n  year={2009}\n}\n@inproceedings{wang2019glue,\n  title={{GLUE}: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding},\n  author={Wang, Alex and Singh, Amanpreet and Michael, Julian and Hill, Felix and Levy, Omer and Bowman, Samuel R.},\n  note={In the Proceedings of ICLR.},\n  year={2019}\n}\n\nNote that each GLUE dataset has its own citation. Please see the source to see\nthe correct citation for each contained dataset.",
+        "citation": "@inproceedings{dagan2005pascal,\n  title={The PASCAL recognising textual entailment challenge},\n  author={Dagan, Ido and Glickman, Oren and Magnini, Bernardo},\n  booktitle={Machine Learning Challenges Workshop},\n  pages={177--190},\n  year={2005},\n  organization={Springer}\n}\n@inproceedings{bar2006second,\n  title={The second pascal recognising textual entailment challenge},\n  author={Bar-Haim, Roy and Dagan, Ido and Dolan, Bill and Ferro, Lisa and Giampiccolo, Danilo and Magnini, Bernardo and Szpektor, Idan},\n  booktitle={Proceedings of the second PASCAL challenges workshop on recognising textual entailment},\n  volume={6},\n  number={1},\n  pages={6--4},\n  year={2006},\n  organization={Venice}\n}\n@inproceedings{giampiccolo2007third,\n  title={The third pascal recognizing textual entailment challenge},\n  author={Giampiccolo, Danilo and Magnini, Bernardo and Dagan, Ido and Dolan, Bill},\n  booktitle={Proceedings of the ACL-PASCAL workshop on textual entailment and paraphrasing},\n  pages={1--9},\n  year={2007},\n  organization={Association for Computational Linguistics}\n}\n@inproceedings{bentivogli2009fifth,\n  title={The Fifth PASCAL Recognizing Textual Entailment Challenge.},\n  author={Bentivogli, Luisa and Clark, Peter and Dagan, Ido and Giampiccolo, Danilo},\n  booktitle={TAC},\n  year={2009}\n}\n@inproceedings{wang2019glue,\n  title={{GLUE}: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding},\n  author={Wang, Alex and Singh, Amanpreet and Michael, Julian and Hill, Felix and Levy, Omer and Bowman, Samuel R.},\n  note={In the Proceedings of ICLR.},\n  year={2019}\n}\n",
         "homepage": "https://aclweb.org/aclwiki/Recognizing_Textual_Entailment",
         "license": "",
         "features": {
             "sentence1": {
                 "dtype": "string",
-                "id": null,
                 "_type": "Value"
             },
             "sentence2": {
                 "dtype": "string",
-                "id": null,
                 "_type": "Value"
             },
             "label": {
-                "num_classes": 2,
                 "names": [
                     "entailment",
                     "not_entailment"
                 ],
-                "names_file": null,
-                "id": null,
                 "_type": "ClassLabel"
             },
             "idx": {
                 "dtype": "int32",
-                "id": null,
                 "_type": "Value"
             }
         },
-        "post_processed": null,
-        "supervised_keys": null,
         "builder_name": "glue",
+        "dataset_name": "glue",
         "config_name": "rte",
         "version": {
             "version_str": "1.0.0",
@@ -575,35 +568,28 @@
             "patch": 0
         },
         "splits": {
-            "test": {
-                "name": "test",
-                "num_bytes": 975936,
-                "num_examples": 3000,
-                "dataset_name": "glue"
-            },
             "train": {
                 "name": "train",
-                "num_bytes": 848888,
+                "num_bytes": 847320,
                 "num_examples": 2490,
-                "dataset_name": "glue"
+                "dataset_name": null
             },
             "validation": {
                 "name": "validation",
-                "num_bytes": 90911,
+                "num_bytes": 90728,
                 "num_examples": 277,
-                "dataset_name": "glue"
+                "dataset_name": null
+            },
+            "test": {
+                "name": "test",
+                "num_bytes": 974053,
+                "num_examples": 3000,
+                "dataset_name": null
             }
         },
-        "download_checksums": {
-            "https://dl.fbaipublicfiles.com/glue/data/RTE.zip": {
-                "num_bytes": 697150,
-                "checksum": "6bf86de103ecd335f3441bd43574d23fef87ecc695977a63b82d5efb206556ee"
-            }
-        },
-        "download_size": 697150,
-        "post_processing_size": null,
-        "dataset_size": 1915735,
-        "size_in_bytes": 2612885
+        "download_size": 1274409,
+        "dataset_size": 1912101,
+        "size_in_bytes": 3186510
     },
     "wnli": {
         "description": "GLUE, the General Language Understanding Evaluation benchmark\n(https://gluebenchmark.com/) is a collection of resources for training,\nevaluating, and analyzing natural language understanding systems.\n\n",

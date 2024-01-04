@@ -260,17 +260,17 @@ dataset_info:
   - name: idx
     dtype: int32
   splits:
-  - name: test
-    num_bytes: 975936
-    num_examples: 3000
   - name: train
-    num_bytes: 848888
+    num_bytes: 847320
     num_examples: 2490
   - name: validation
-    num_bytes: 90911
+    num_bytes: 90728
     num_examples: 277
-  download_size: 697150
-  dataset_size: 1915735
+  - name: test
+    num_bytes: 974053
+    num_examples: 3000
+  download_size: 1274409
+  dataset_size: 1912101
 - config_name: sst2
   features:
   - name: sentence
@@ -400,6 +400,14 @@ configs:
     path: qqp/validation-*
   - split: test
     path: qqp/test-*
+- config_name: rte
+  data_files:
+  - split: train
+    path: rte/train-*
+  - split: validation
+    path: rte/validation-*
+  - split: test
+    path: rte/test-*
 - config_name: sst2
   data_files:
   - split: train
