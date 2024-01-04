@@ -681,7 +681,7 @@ An example of 'test' looks as follows.
 ```
 {
   "premise": "What have you decided, what are you going to do?",
-  "hypothesis": "So what's your decision?,
+  "hypothesis": "So what's your decision?",
   "label": -1,
   "idx": 0
 }
@@ -689,31 +689,114 @@ An example of 'test' looks as follows.
 
 #### mrpc
 
-[More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
+- **Size of downloaded dataset files:** ??
+- **Size of the generated dataset:** 1.5 MB
+- **Total amount of disk used:** ??
+
+An example of 'train' looks as follows.
+```
+{
+  "sentence1": "Amrozi accused his brother, whom he called "the witness", of deliberately distorting his evidence.",
+  "sentence2": "Referring to him as only "the witness", Amrozi accused his brother of deliberately distorting his evidence.",
+  "label": 1,
+  "idx": 0
+}
+```
 
 #### qnli
 
-[More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
+- **Size of downloaded dataset files:** ??
+- **Size of the generated dataset:** 28 MB
+- **Total amount of disk used:** ??
+
+An example of 'train' looks as follows.
+```
+{
+  "question": "When did the third Digimon series begin?",
+  "sentence": "Unlike the two seasons before it and most of the seasons that followed, Digimon Tamers takes a darker and more realistic approach to its story featuring Digimon who do not reincarnate after their deaths and more complex character development in the original Japanese.",
+  "label": 1,
+  "idx": 0
+}
+```
 
 #### qqp
 
-[More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
+- **Size of downloaded dataset files:** ??
+- **Size of the generated dataset:** 107 MB
+- **Total amount of disk used:** ??
+
+An example of 'train' looks as follows.
+```
+{
+  "question1": "How is the life of a math student? Could you describe your own experiences?",
+  "question2": "Which level of prepration is enough for the exam jlpt5?",
+  "label": 0,
+  "idx": 0
+}
+```
 
 #### rte
 
-[More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
+- **Size of downloaded dataset files:** ??
+- **Size of the generated dataset:** 1.9 MB
+- **Total amount of disk used:** ??
+
+An example of 'train' looks as follows.
+```
+{
+  "sentence1": "No Weapons of Mass Destruction Found in Iraq Yet.",
+  "sentence2": "Weapons of Mass Destruction Found in Iraq.",
+  "label": 1,
+  "idx": 0
+}
+```
 
 #### sst2
 
-[More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
+- **Size of downloaded dataset files:** ??
+- **Size of the generated dataset:** 4.9 MB
+- **Total amount of disk used:** ??
+
+An example of 'train' looks as follows.
+```
+{
+  "sentence": "hide new secretions from the parental units",
+  "label": 0,
+  "idx": 0
+}
+```
 
 #### stsb
 
-[More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
+- **Size of downloaded dataset files:** ??
+- **Size of the generated dataset:** 1.2 MB
+- **Total amount of disk used:** ??
+
+An example of 'train' looks as follows.
+```
+{
+  "sentence1": "A plane is taking off.",
+  "sentence2": "An air plane is taking off.",
+  "label": 5.0,
+  "idx": 0
+}
+```
 
 #### wnli
 
-[More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
+- **Size of downloaded dataset files:** ??
+- **Size of the generated dataset:** 0.18 MB
+- **Total amount of disk used:** ??
+
+An example of 'train' looks as follows.
+```
+{
+  "sentence1": "I stuck a pin through a carrot. When I pulled the pin out, it had a hole.",
+  "sentence2": "The carrot had a hole.",
+  "label": 1,
+  "idx": 0
+}
+```
 
 ### Data Fields
 
@@ -750,31 +833,51 @@ The data fields are the same among all splits.
 
 #### mrpc
 
-[More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
+- `sentence1`: a `string` feature.
+- `sentence2`: a `string` feature.
+- `label`: a classification label, with possible values including `not_equivalent` (0), `equivalent` (1).
+- `idx`: a `int32` feature.
 
 #### qnli
 
-[More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
+- `question`: a `string` feature.
+- `sentence`: a `string` feature.
+- `label`: a classification label, with possible values including `entailment` (0), `not_entailment` (1).
+- `idx`: a `int32` feature.
 
 #### qqp
 
-[More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
+- `question1`: a `string` feature.
+- `question2`: a `string` feature.
+- `label`: a classification label, with possible values including `not_duplicate` (0), `duplicate` (1).
+- `idx`: a `int32` feature.
 
 #### rte
 
-[More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
+- `sentence1`: a `string` feature.
+- `sentence2`: a `string` feature.
+- `label`: a classification label, with possible values including `entailment` (0), `not_entailment` (1).
+- `idx`: a `int32` feature.
 
 #### sst2
 
-[More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
+- `sentence`: a `string` feature.
+- `label`: a classification label, with possible values including `negative` (0), `positive` (1).
+- `idx`: a `int32` feature.
 
 #### stsb
 
-[More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
+- `sentence1`: a `string` feature.
+- `sentence2`: a `string` feature.
+- `label`: a float32 regression label, with possible values from 0 to 5.
+- `idx`: a `int32` feature.
 
 #### wnli
 
-[More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
+- `sentence1`: a `string` feature.
+- `sentence2`: a `string` feature.
+- `label`: a classification label, with possible values including `not_entailment` (0), `entailment` (1).
+- `idx`: a `int32` feature.
 
 ### Data Splits
 
