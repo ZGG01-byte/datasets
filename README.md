@@ -208,17 +208,17 @@ dataset_info:
   - name: idx
     dtype: int32
   splits:
-  - name: test
-    num_bytes: 1376516
-    num_examples: 5463
   - name: train
-    num_bytes: 25677924
+    num_bytes: 25612443
     num_examples: 104743
   - name: validation
-    num_bytes: 1371727
+    num_bytes: 1368304
     num_examples: 5463
-  download_size: 10627589
-  dataset_size: 28426167
+  - name: test
+    num_bytes: 1373093
+    num_examples: 5463
+  download_size: 19278324
+  dataset_size: 28353840
 - config_name: qqp
   features:
   - name: question1
@@ -384,6 +384,14 @@ configs:
     path: mrpc/validation-*
   - split: test
     path: mrpc/test-*
+- config_name: qnli
+  data_files:
+  - split: train
+    path: qnli/train-*
+  - split: validation
+    path: qnli/validation-*
+  - split: test
+    path: qnli/test-*
 - config_name: qqp
   data_files:
   - split: train
