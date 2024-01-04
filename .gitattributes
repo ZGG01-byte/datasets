@@ -70,3 +70,6 @@ stsb/test/0000.parquet filter=lfs diff=lfs merge=lfs -text
 wnli/train/0000.parquet filter=lfs diff=lfs merge=lfs -text
 wnli/validation/0000.parquet filter=lfs diff=lfs merge=lfs -text
 wnli/test/0000.parquet filter=lfs diff=lfs merge=lfs -text
+cola/train/0000.parquet filter=lfs diff=lfs merge=lfs -text
+cola/validation/0000.parquet filter=lfs diff=lfs merge=lfs -text
+cola/test/0000.parquet filter=lfs diff=lfs merge=lfs -text
