@@ -332,17 +332,17 @@ dataset_info:
   - name: idx
     dtype: int32
   splits:
-  - name: test
-    num_bytes: 37992
-    num_examples: 146
   - name: train
-    num_bytes: 107517
+    num_bytes: 107109
     num_examples: 635
   - name: validation
-    num_bytes: 12215
+    num_bytes: 12162
     num_examples: 71
-  download_size: 28999
-  dataset_size: 157724
+  - name: test
+    num_bytes: 37889
+    num_examples: 146
+  download_size: 63522
+  dataset_size: 157160
 configs:
 - config_name: cola
   data_files:
@@ -424,6 +424,14 @@ configs:
     path: stsb/validation-*
   - split: test
     path: stsb/test-*
+- config_name: wnli
+  data_files:
+  - split: train
+    path: wnli/train-*
+  - split: validation
+    path: wnli/validation-*
+  - split: test
+    path: wnli/test-*
 train-eval-index:
 - config: cola
   task: text-classification
