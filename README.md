@@ -182,17 +182,17 @@ dataset_info:
   - name: idx
     dtype: int32
   splits:
-  - name: test
-    num_bytes: 443498
-    num_examples: 1725
   - name: train
-    num_bytes: 946146
+    num_bytes: 943843
     num_examples: 3668
   - name: validation
-    num_bytes: 106142
+    num_bytes: 105879
     num_examples: 408
-  download_size: 1494541
-  dataset_size: 1495786
+  - name: test
+    num_bytes: 442410
+    num_examples: 1725
+  download_size: 1033400
+  dataset_size: 1492132
 - config_name: qnli
   features:
   - name: question
@@ -352,6 +352,14 @@ configs:
     path: cola/validation-*
   - split: test
     path: cola/test-*
+- config_name: mrpc
+  data_files:
+  - split: train
+    path: mrpc/train-*
+  - split: validation
+    path: mrpc/validation-*
+  - split: test
+    path: mrpc/test-*
 - config_name: sst2
   data_files:
   - split: train
