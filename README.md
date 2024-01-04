@@ -284,17 +284,17 @@ dataset_info:
   - name: idx
     dtype: int32
   splits:
-  - name: test
-    num_bytes: 217556
-    num_examples: 1821
   - name: train
-    num_bytes: 4715283
+    num_bytes: 4681603
     num_examples: 67349
   - name: validation
-    num_bytes: 106692
+    num_bytes: 106252
     num_examples: 872
-  download_size: 7439277
-  dataset_size: 5039531
+  - name: test
+    num_bytes: 216640
+    num_examples: 1821
+  download_size: 3331080
+  dataset_size: 5004495
 - config_name: stsb
   features:
   - name: sentence1
@@ -352,6 +352,14 @@ configs:
     path: cola/validation-*
   - split: test
     path: cola/test-*
+- config_name: sst2
+  data_files:
+  - split: train
+    path: sst2/train-*
+  - split: validation
+    path: sst2/validation-*
+  - split: test
+    path: sst2/test-*
 train-eval-index:
 - config: cola
   task: text-classification
