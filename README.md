@@ -159,14 +159,14 @@ dataset_info:
   - name: idx
     dtype: int32
   splits:
-  - name: test
-    num_bytes: 1956866
-    num_examples: 9847
   - name: validation
-    num_bytes: 1955384
+    num_bytes: 1949231
     num_examples: 9832
-  download_size: 312783507
-  dataset_size: 3912250
+  - name: test
+    num_bytes: 1950703
+    num_examples: 9847
+  download_size: 2509009
+  dataset_size: 3899934
 - config_name: mrpc
   features:
   - name: sentence1
@@ -364,6 +364,12 @@ configs:
     path: mnli/test_matched-*
   - split: test_mismatched
     path: mnli/test_mismatched-*
+- config_name: mnli_mismatched
+  data_files:
+  - split: validation
+    path: mnli_mismatched/validation-*
+  - split: test
+    path: mnli_mismatched/test-*
 - config_name: mrpc
   data_files:
   - split: train
