@@ -23,11 +23,45 @@ task_ids:
 - text-scoring
 paperswithcode_id: glue
 pretty_name: GLUE (General Language Understanding Evaluation benchmark)
+config_names:
+- ax
+- cola
+- mnli
+- mnli_matched
+- mnli_mismatched
+- mrpc
+- qnli
+- qqp
+- rte
+- sst2
+- stsb
+- wnli
 tags:
 - qa-nli
 - coreference-nli
 - paraphrase-identification
 dataset_info:
+- config_name: ax
+  features:
+  - name: premise
+    dtype: string
+  - name: hypothesis
+    dtype: string
+  - name: label
+    dtype:
+      class_label:
+        names:
+          '0': entailment
+          '1': neutral
+          '2': contradiction
+  - name: idx
+    dtype: int32
+  splits:
+  - name: test
+    num_bytes: 238392
+    num_examples: 1104
+  download_size: 222257
+  dataset_size: 238392
 - config_name: cola
   features:
   - name: sentence
@@ -41,115 +75,17 @@ dataset_info:
   - name: idx
     dtype: int32
   splits:
-  - name: test
-    num_bytes: 61049
-    num_examples: 1063
   - name: train
-    num_bytes: 489149
+    num_bytes: 484869
     num_examples: 8551
   - name: validation
-    num_bytes: 60850
+    num_bytes: 60322
     num_examples: 1043
-  download_size: 376971
-  dataset_size: 611048
-- config_name: sst2
-  features:
-  - name: sentence
-    dtype: string
-  - name: label
-    dtype:
-      class_label:
-        names:
-          '0': negative
-          '1': positive
-  - name: idx
-    dtype: int32
-  splits:
   - name: test
-    num_bytes: 217556
-    num_examples: 1821
-  - name: train
-    num_bytes: 4715283
-    num_examples: 67349
-  - name: validation
-    num_bytes: 106692
-    num_examples: 872
-  download_size: 7439277
-  dataset_size: 5039531
-- config_name: mrpc
-  features:
-  - name: sentence1
-    dtype: string
-  - name: sentence2
-    dtype: string
-  - name: label
-    dtype:
-      class_label:
-        names:
-          '0': not_equivalent
-          '1': equivalent
-  - name: idx
-    dtype: int32
-  splits:
-  - name: test
-    num_bytes: 443498
-    num_examples: 1725
-  - name: train
-    num_bytes: 946146
-    num_examples: 3668
-  - name: validation
-    num_bytes: 106142
-    num_examples: 408
-  download_size: 1494541
-  dataset_size: 1495786
-- config_name: qqp
-  features:
-  - name: question1
-    dtype: string
-  - name: question2
-    dtype: string
-  - name: label
-    dtype:
-      class_label:
-        names:
-          '0': not_duplicate
-          '1': duplicate
-  - name: idx
-    dtype: int32
-  splits:
-  - name: train
-    num_bytes: 50901116
-    num_examples: 363846
-  - name: validation
-    num_bytes: 5653794
-    num_examples: 40430
-  - name: test
-    num_bytes: 55171431
-    num_examples: 390965
-  download_size: 41696084
-  dataset_size: 111726341
-- config_name: stsb
-  features:
-  - name: sentence1
-    dtype: string
-  - name: sentence2
-    dtype: string
-  - name: label
-    dtype: float32
-  - name: idx
-    dtype: int32
-  splits:
-  - name: test
-    num_bytes: 170847
-    num_examples: 1379
-  - name: train
-    num_bytes: 758394
-    num_examples: 5749
-  - name: validation
-    num_bytes: 217012
-    num_examples: 1500
-  download_size: 802872
-  dataset_size: 1146253
+    num_bytes: 60513
+    num_examples: 1063
+  download_size: 326394
+  dataset_size: 605704
 - config_name: mnli
   features:
   - name: premise
@@ -183,30 +119,6 @@ dataset_info:
     num_examples: 9832
   download_size: 312783507
   dataset_size: 82472081
-- config_name: mnli_mismatched
-  features:
-  - name: premise
-    dtype: string
-  - name: hypothesis
-    dtype: string
-  - name: label
-    dtype:
-      class_label:
-        names:
-          '0': entailment
-          '1': neutral
-          '2': contradiction
-  - name: idx
-    dtype: int32
-  splits:
-  - name: test
-    num_bytes: 1956866
-    num_examples: 9847
-  - name: validation
-    num_bytes: 1955384
-    num_examples: 9832
-  download_size: 312783507
-  dataset_size: 3912250
 - config_name: mnli_matched
   features:
   - name: premise
@@ -231,6 +143,56 @@ dataset_info:
     num_examples: 9815
   download_size: 312783507
   dataset_size: 3694713
+- config_name: mnli_mismatched
+  features:
+  - name: premise
+    dtype: string
+  - name: hypothesis
+    dtype: string
+  - name: label
+    dtype:
+      class_label:
+        names:
+          '0': entailment
+          '1': neutral
+          '2': contradiction
+  - name: idx
+    dtype: int32
+  splits:
+  - name: test
+    num_bytes: 1956866
+    num_examples: 9847
+  - name: validation
+    num_bytes: 1955384
+    num_examples: 9832
+  download_size: 312783507
+  dataset_size: 3912250
+- config_name: mrpc
+  features:
+  - name: sentence1
+    dtype: string
+  - name: sentence2
+    dtype: string
+  - name: label
+    dtype:
+      class_label:
+        names:
+          '0': not_equivalent
+          '1': equivalent
+  - name: idx
+    dtype: int32
+  splits:
+  - name: test
+    num_bytes: 443498
+    num_examples: 1725
+  - name: train
+    num_bytes: 946146
+    num_examples: 3668
+  - name: validation
+    num_bytes: 106142
+    num_examples: 408
+  download_size: 1494541
+  dataset_size: 1495786
 - config_name: qnli
   features:
   - name: question
@@ -257,6 +219,32 @@ dataset_info:
     num_examples: 5463
   download_size: 10627589
   dataset_size: 28426167
+- config_name: qqp
+  features:
+  - name: question1
+    dtype: string
+  - name: question2
+    dtype: string
+  - name: label
+    dtype:
+      class_label:
+        names:
+          '0': not_duplicate
+          '1': duplicate
+  - name: idx
+    dtype: int32
+  splits:
+  - name: train
+    num_bytes: 50901116
+    num_examples: 363846
+  - name: validation
+    num_bytes: 5653794
+    num_examples: 40430
+  - name: test
+    num_bytes: 55171431
+    num_examples: 390965
+  download_size: 41696084
+  dataset_size: 111726341
 - config_name: rte
   features:
   - name: sentence1
@@ -283,6 +271,52 @@ dataset_info:
     num_examples: 277
   download_size: 697150
   dataset_size: 1915735
+- config_name: sst2
+  features:
+  - name: sentence
+    dtype: string
+  - name: label
+    dtype:
+      class_label:
+        names:
+          '0': negative
+          '1': positive
+  - name: idx
+    dtype: int32
+  splits:
+  - name: test
+    num_bytes: 217556
+    num_examples: 1821
+  - name: train
+    num_bytes: 4715283
+    num_examples: 67349
+  - name: validation
+    num_bytes: 106692
+    num_examples: 872
+  download_size: 7439277
+  dataset_size: 5039531
+- config_name: stsb
+  features:
+  - name: sentence1
+    dtype: string
+  - name: sentence2
+    dtype: string
+  - name: label
+    dtype: float32
+  - name: idx
+    dtype: int32
+  splits:
+  - name: test
+    num_bytes: 170847
+    num_examples: 1379
+  - name: train
+    num_bytes: 758394
+    num_examples: 5749
+  - name: validation
+    num_bytes: 217012
+    num_examples: 1500
+  download_size: 802872
+  dataset_size: 1146253
 - config_name: wnli
   features:
   - name: sentence1
@@ -309,27 +343,15 @@ dataset_info:
     num_examples: 71
   download_size: 28999
   dataset_size: 157724
-- config_name: ax
-  features:
-  - name: premise
-    dtype: string
-  - name: hypothesis
-    dtype: string
-  - name: label
-    dtype:
-      class_label:
-        names:
-          '0': entailment
-          '1': neutral
-          '2': contradiction
-  - name: idx
-    dtype: int32
-  splits:
-  - name: test
-    num_bytes: 238392
-    num_examples: 1104
-  download_size: 222257
-  dataset_size: 238392
+configs:
+- config_name: cola
+  data_files:
+  - split: train
+    path: cola/train-*
+  - split: validation
+    path: cola/validation-*
+  - split: test
+    path: cola/test-*
 train-eval-index:
 - config: cola
   task: text-classification
@@ -439,19 +461,6 @@ train-eval-index:
     sentence1: text1
     sentence2: text2
     label: target
-config_names:
-- ax
-- cola
-- mnli
-- mnli_matched
-- mnli_mismatched
-- mrpc
-- qnli
-- qqp
-- rte
-- sst2
-- stsb
-- wnli
 ---
 
 # Dataset Card for GLUE
