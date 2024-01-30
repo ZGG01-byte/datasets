@@ -6,7 +6,7 @@ language_creators:
 language:
 - en
 license:
-- cc-by-4.0
+- other
 multilinguality:
 - monolingual
 size_categories:
@@ -536,9 +536,10 @@ config_names:
 
 ## Dataset Description
 
-- **Homepage:** [https://nyu-mll.github.io/CoLA/](https://nyu-mll.github.io/CoLA/)
-- **Repository:** [More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
-- **Paper:** [More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
+- **Homepage:** https://gluebenchmark.com/
+- **Repository:** https://github.com/nyu-mll/GLUE-baselines
+- **Paper:** https://arxiv.org/abs/1804.07461
+- **Leaderboard:** https://gluebenchmark.com/leaderboard
 - **Point of Contact:** [More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
 - **Size of downloaded dataset files:** 1.00 GB
 - **Size of the generated dataset:** 240.84 MB
@@ -991,26 +992,102 @@ The data fields are the same among all splits.
 
 ### Licensing Information
 
-[More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)
+The primary GLUE tasks are built on and derived from existing datasets. We refer users to the original licenses accompanying each dataset.
 
 ### Citation Information
 
+If you use GLUE, please cite all the datasets you use.
+
+In addition, we encourage you to use the following BibTeX citation for GLUE itself:
 ```
-@article{warstadt2018neural,
-  title={Neural Network Acceptability Judgments},
-  author={Warstadt, Alex and Singh, Amanpreet and Bowman, Samuel R},
-  journal={arXiv preprint arXiv:1805.12471},
-  year={2018}
-}
 @inproceedings{wang2019glue,
   title={{GLUE}: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding},
   author={Wang, Alex and Singh, Amanpreet and Michael, Julian and Hill, Felix and Levy, Omer and Bowman, Samuel R.},
   note={In the Proceedings of ICLR.},
   year={2019}
 }
+```
 
-Note that each GLUE dataset has its own citation. Please see the source to see
-the correct citation for each contained dataset.
+If you evaluate using GLUE, we also highly recommend citing the papers that originally introduced the nine GLUE tasks, both to give the original authors their due credit and because venues will expect papers to describe the data they evaluate on.
+The following provides BibTeX for all of the GLUE tasks, except QQP, for which we recommend adding a footnote to this page: https://data.quora.com/First-Quora-Dataset-Release-Question-Pairs
+```
+@article{warstadt2018neural,
+  title={Neural Network Acceptability Judgments},
+  author={Warstadt, Alex and Singh, Amanpreet and Bowman, Samuel R.},
+  journal={arXiv preprint 1805.12471},
+  year={2018}
+}
+@inproceedings{socher2013recursive,
+  title={Recursive deep models for semantic compositionality over a sentiment treebank},
+  author={Socher, Richard and Perelygin, Alex and Wu, Jean and Chuang, Jason and Manning, Christopher D and Ng, Andrew and Potts, Christopher},
+  booktitle={Proceedings of EMNLP},
+  pages={1631--1642},
+  year={2013}
+}
+@inproceedings{dolan2005automatically,
+  title={Automatically constructing a corpus of sentential paraphrases},
+  author={Dolan, William B and Brockett, Chris},
+  booktitle={Proceedings of the International Workshop on Paraphrasing},
+  year={2005}
+}
+@book{agirre2007semantic,
+  editor    = {Agirre, Eneko and M`arquez, Llu'{i}s and Wicentowski, Richard},
+  title     = {Proceedings of the Fourth International Workshop on Semantic Evaluations (SemEval-2007)},
+  month     = {June},
+  year      = {2007},
+  address   = {Prague, Czech Republic},
+  publisher = {Association for Computational Linguistics},
+}
+@inproceedings{williams2018broad,
+  author    = {Williams, Adina and Nangia, Nikita and Bowman, Samuel R.},
+  title = {A Broad-Coverage Challenge Corpus for Sentence Understanding through Inference},
+  booktitle = {Proceedings of NAACL-HLT},
+  year = 2018
+}
+@inproceedings{rajpurkar2016squad,
+  author = {Rajpurkar, Pranav and Zhang, Jian and Lopyrev, Konstantin and Liang, Percy}
+  title = {{SQ}u{AD}: 100,000+ Questions for Machine Comprehension of Text},
+  booktitle = {Proceedings of EMNLP}
+  year = {2016},
+  publisher = {Association for Computational Linguistics},
+  pages = {2383--2392},
+  location = {Austin, Texas},
+}
+@incollection{dagan2006pascal,
+  title={The {PASCAL} recognising textual entailment challenge},
+  author={Dagan, Ido and Glickman, Oren and Magnini, Bernardo},
+  booktitle={Machine learning challenges. evaluating predictive uncertainty, visual object classification, and recognising tectual entailment},
+  pages={177--190},
+  year={2006},
+  publisher={Springer}
+}
+@article{bar2006second,
+  title={The second {PASCAL} recognising textual entailment challenge},
+  author={Bar Haim, Roy and Dagan, Ido and Dolan, Bill and Ferro, Lisa and Giampiccolo, Danilo and Magnini, Bernardo and Szpektor, Idan},
+  year={2006}
+}
+@inproceedings{giampiccolo2007third,
+  title={The third {PASCAL} recognizing textual entailment challenge},
+  author={Giampiccolo, Danilo and Magnini, Bernardo and Dagan, Ido and Dolan, Bill},
+  booktitle={Proceedings of the ACL-PASCAL workshop on textual entailment and paraphrasing},
+  pages={1--9},
+  year={2007},
+  organization={Association for Computational Linguistics},
+}
+@article{bentivogli2009fifth,
+  title={The Fifth {PASCAL} Recognizing Textual Entailment Challenge},
+  author={Bentivogli, Luisa and Dagan, Ido and Dang, Hoa Trang and Giampiccolo, Danilo and Magnini, Bernardo},
+  booktitle={TAC},
+  year={2009}
+}
+@inproceedings{levesque2011winograd,
+  title={The {W}inograd schema challenge},
+  author={Levesque, Hector J and Davis, Ernest and Morgenstern, Leora},
+  booktitle={{AAAI} Spring Symposium: Logical Formalizations of Commonsense Reasoning},
+  volume={46},
+  pages={47},
+  year={2011}
+}
 ```
 
 
