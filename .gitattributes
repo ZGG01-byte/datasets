@@ -30,3 +30,4 @@ mnli/test_mismatched/index.duckdb filter=lfs diff=lfs merge=lfs -text
 mnli/train/index.duckdb filter=lfs diff=lfs merge=lfs -text
 mnli/validation_matched/index.duckdb filter=lfs diff=lfs merge=lfs -text
 mnli/validation_mismatched/index.duckdb filter=lfs diff=lfs merge=lfs -text
+mnli_matched/validation/index.duckdb filter=lfs diff=lfs merge=lfs -text
