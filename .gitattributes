@@ -37,3 +37,4 @@ mnli_mismatched/test/index.duckdb filter=lfs diff=lfs merge=lfs -text
 mrpc/train/index.duckdb filter=lfs diff=lfs merge=lfs -text
 qnli/test/index.duckdb filter=lfs diff=lfs merge=lfs -text
 qnli/validation/index.duckdb filter=lfs diff=lfs merge=lfs -text
+qnli/train/index.duckdb filter=lfs diff=lfs merge=lfs -text
