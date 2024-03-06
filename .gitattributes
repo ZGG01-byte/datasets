@@ -45,3 +45,4 @@ rte/train/index.duckdb filter=lfs diff=lfs merge=lfs -text
 rte/test/index.duckdb filter=lfs diff=lfs merge=lfs -text
 sst2/train/index.duckdb filter=lfs diff=lfs merge=lfs -text
 stsb/train/index.duckdb filter=lfs diff=lfs merge=lfs -text
+mrpc/test/index.duckdb filter=lfs diff=lfs merge=lfs -text
