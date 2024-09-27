@@ -1096,7 +1096,7 @@ In addition, we encourage you to use the following BibTeX citation for GLUE itse
 @inproceedings{wang2019glue,
   title={{GLUE}: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding},
   author={Wang, Alex and Singh, Amanpreet and Michael, Julian and Hill, Felix and Levy, Omer and Bowman, Samuel R.},
-  note={In the Proceedings of ICLR.},
+  booktitle={In the Proceedings of ICLR.},
   year={2019}
 }
 ```
